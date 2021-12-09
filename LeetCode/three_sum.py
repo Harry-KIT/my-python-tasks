@@ -1,7 +1,6 @@
 from typing import List
 
 
-
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         ans = list()
@@ -25,4 +24,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(Solution().threeSum([3, -2, 1, 0]))
+    print(Solution().threeSum([-1,0,1,2,-1,-4]))
