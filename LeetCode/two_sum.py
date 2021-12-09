@@ -23,3 +23,5 @@ def twosum_indices_linear(nums: List[int], target: int) -> tuple[int, ...]:
 
 if __name__ == '__main__':
     print(twosum_indices_linear([2, 7, 11, 15], 9))
+
+
