@@ -13,12 +13,12 @@ class Solution:
         nums.sort()
         n = len(nums)
         for i in range(n):
-            if i > 0 and nums[i] == nums[i-1]:
+            if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
             k = n - 1
-            for j in range(i+1, n-1):
-                if j > i+1 and nums[j] == nums[j-1]:
+            for j in range(i + 1, n - 1):
+                if j > i + 1 and nums[j] == nums[j - 1]:
                     continue
                 while nums[i] + nums[j] + nums[k] > 0 and k > j:
                     k -= 1
@@ -30,4 +30,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(Solution().threeSum([-1,0,1,2,-1,-4]))
+    print(Solution().threeSum([-1, 0, 1, 2, -1, -4]))
